@@ -98,7 +98,7 @@
 
  ![output image](Output/10.PNG)
 
- 11. Find all the movies directed by John Lasseter
+ - 11. Find all the movies directed by John Lasseter
 
     ``` bash
     SELECT * FROM movies where director= "John Lasseter";
