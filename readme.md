@@ -211,6 +211,85 @@
 
  ![output image](Output/22.PNG)
 
+ - 23. Find the domestic and international sales for each movie
+
+    ``` bash
+    select movies.title, boxoffice.domestic_sales, boxoffice.international_sales from movies left join boxoffice on movies.id = boxoffice.movie_id
+    ```
+**Output:**
+
+ ![output image](Output/23.PNG)
+
+ - 24. Show the sales numbers for each movie that did better internationally rather than domestically
+
+    ``` bash
+    select movies.id, movies.title, movies.director, boxoffice.international_sales, boxoffice.domestic_sales
+    from movies join boxoffice on movies.id = boxoffice.movie_id where boxoffice.domestic_sales < boxoffice.international_sales
+    ```
+**Output:**
+
+ ![output image](Output/24.PNG)
+
+ - 25. List all the movies by their ratings in descending order 
+
+    ``` bash
+    select movies.title, movies.director, boxoffice.rating from movies
+    join boxoffice on movies.id = boxoffice.movie_id order by rating desc;
+    ```
+**Output:**
+
+ ![output image](Output/28.PNG)
+
+ - 26. Find the list of all buildings that have employees 
+
+    ``` bash
+    SELECT DISTINCT building FROM employees;
+    ```
+**Output:**
+
+ ![output image](Output/26.PNG)
+
+ - 27. Find the list of all buildings and their capacity
+
+    ``` bash
+    SELECT * FROM buildings;
+    ```
+**Output:**
+
+ ![output image](Output/27.PNG)
+
+ - 28. List all buildings and the distinct employee roles in each building (including empty buildings)
+
+    ``` bash
+    SELECT DISTINCT building_name, role 
+    from buildings left join employees ON building_name = building;
+    ```
+**Output:**
+
+ ![output image](Output/28.PNG)
+
+ - 29. Find the name and role of all employees who have not been assigned to a building 
+
+    ``` bash
+    SELECT * FROM employees where building is null;
+    ```
+**Output:**
+
+ ![output image](Output/29.PNG)
+
+ - 30. Find the names of the buildings that hold no employees
+
+    ``` bash
+    SELECT DISTINCT building_name
+    FROM buildings 
+    LEFT JOIN employees
+    ON building_name = building
+    WHERE role IS NULL;
+    ```
+**Output:**
+
+ ![output image](Output/30.PNG)
+
 
 
 
