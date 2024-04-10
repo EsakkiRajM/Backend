@@ -32,6 +32,7 @@ INSERT INTO student (student_id, student_name, student_email) VALUES
 ```
 
     **Output:**
+    
     ``` bash 
     select * from student;
     ```
