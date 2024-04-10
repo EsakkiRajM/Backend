@@ -31,10 +31,10 @@ INSERT INTO student (student_id, student_name, student_email) VALUES
 (5, "ranjith", "ranjith@gmail.com")
 ```
 
-    **Output:**
-    
-    ``` bash 
+**Output:**
+
+ ``` bash 
     select * from student;
-    ```
+```
 
  ![output image](Output/student.PNG)
