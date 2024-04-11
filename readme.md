@@ -18,9 +18,9 @@
 
  ![output image](Output/1.1.PNG)
 
-    ``` bash
+    ``` bash    
     db.tasks.find({month: "October"})
-    ```
+    ```   
 
 **Output:**
 
