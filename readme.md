@@ -8,7 +8,7 @@
 
  - I have attached `Output image` for your reference  
 
-  - 1. Find all the topics and tasks which are thought in the month of October
+ - 1. Find all the topics and tasks which are thought in the month of October
 
 **query 1:**
 
@@ -43,11 +43,11 @@
 
     ``` bash
     {
-  from: "users",
-  localField: "_id",
-  foreignField: "placement_id",
-  as: "appeared for the placment",
-  }
+    from: "users",
+    localField: "_id",
+    foreignField: "placement_id",
+    as: "appeared for the placment",
+    }
     ```
 **Output:**
 
@@ -56,11 +56,10 @@
  - 4. Find the number of problems solved by the user in codekata
 
     ``` bash
-     {
-	_id: "$_id",
-	problem_solved: { $avg: "$no_of_problem_solved" }
-     }
-
+        {
+        _id: "$_id",
+        problem_solved: { $avg: "$no_of_problem_solved" }
+        }
     ```
 **Output:**
 
@@ -69,26 +68,26 @@
  - 5. Find all the mentors with who has the mentee's count more than 15
 
     ``` bash
-     db.mentors.aggregate([
-  {
-    $lookup: {
-      from: "users",
-      localField: "_id",
-      foreignField: "mentor_id",
-      as: "mentees"
+        db.mentors.aggregate([
+    {
+        $lookup: {
+        from: "users",
+        localField: "_id",
+        foreignField: "mentor_id",
+        as: "mentees"
+        }
+    },
+    {
+        $addFields: {
+        menteeCount: { $size: "$mentees" }
+        }
+    },
+    {
+        $match: {
+        menteeCount: { $gt: 15 }
+        }
     }
-  },
-  {
-    $addFields: {
-      menteeCount: { $size: "$mentees" }
-    }
-  },
-  {
-    $match: {
-      menteeCount: { $gt: 15 }
-    }
-  }
- ]);
+    ]);
     ```
 **Output:**
 
@@ -97,24 +96,24 @@
  - 6. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
 
     ``` bash
-     db.attendance.aggregate([
-  {
-    $match: {
-      date: {
-        $gte: ISODate("2020-10-15"),
-        $lte: ISODate("2020-10-31")
-      },
-      status: "absent",
-      task_submitted: false
+        db.attendance.aggregate([
+    {
+        $match: {
+        date: {
+            $gte: ISODate("2020-10-15"),
+            $lte: ISODate("2020-10-31")
+        },
+        status: "absent",
+        task_submitted: false
+        }
+    },
+    {
+        $group: {
+        _id: null,
+        count: { $sum: 1 }
+        }
     }
-  },
-  {
-    $group: {
-      _id: null,
-      count: { $sum: 1 }
-    }
-  }
-  ]);
+    ]);
     ```
 **Output:**
 
