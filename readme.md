@@ -39,7 +39,7 @@
 
  - 3. Find all the company drives and students who are appeared for the placement
 
- **Aggregate:**
+**Aggregate:**
 
     ``` bash
     {
