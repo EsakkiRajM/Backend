@@ -10,7 +10,7 @@
 
   - 1. Find all the topics and tasks which are thought in the month of October
 
-  **query 1:**
+**query 1:**
 
     ``` bash
     db.topics.find({month: "October"})
@@ -19,7 +19,7 @@
 
  ![output image](Output/1.1.PNG)
 
-  **query 1:**
+**query 1:**
 
     ``` bash
     db.tasks.find({month: "October"})
