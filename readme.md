@@ -10,16 +10,12 @@
 
  - 1. Find all the topics and tasks which are thought in the month of October
 
-**query 1:**
-
     ``` bash
     db.topics.find({month: "October"})
     ```
 **Output:**
 
  ![output image](Output/1.1.PNG)
-
-**query 1:**
 
     ``` bash
     db.tasks.find({month: "October"})
@@ -38,8 +34,6 @@
  ![output image](Output/2.PNG)
 
  - 3. Find all the company drives and students who are appeared for the placement
-
-**Aggregate:**
 
     ``` bash
     {
