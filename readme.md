@@ -15,7 +15,7 @@
     ``` bash
     db.topics.find({month: "October"})
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/1.1.PNG)
 
@@ -24,7 +24,7 @@
     ``` bash
     db.tasks.find({month: "October"})
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/1.2.PNG)
 
@@ -33,7 +33,7 @@
     ``` bash
     db.company_drives.find( {date: {$gte: ISODate("2020-10-15"), $lte: ISODate("2020-10-31") } } )
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/2.PNG)
 
@@ -49,7 +49,7 @@
   as: "appeared for the placment",
   }
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/3.PNG)
 
@@ -60,8 +60,9 @@
 	_id: "$_id",
 	problem_solved: { $avg: "$no_of_problem_solved" }
      }
+
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/4.PNG)
 
@@ -89,7 +90,7 @@
   }
  ]);
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/5.PNG)
 
@@ -115,6 +116,6 @@
   }
   ]);
     ```
-  **Output:**
+**Output:**
 
  ![output image](Output/6.PNG)
