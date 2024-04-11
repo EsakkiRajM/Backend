@@ -13,6 +13,7 @@
     ``` bash
     db.topics.find({month: "October"})
     ```
+    
 **Output:**
 
  ![output image](Output/1.1.PNG)
@@ -20,6 +21,7 @@
     ``` bash
     db.tasks.find({month: "October"})
     ```
+
 **Output:**
 
  ![output image](Output/1.2.PNG)
