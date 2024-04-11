@@ -12,6 +12,7 @@
 
     ``` bash
     db.topics.find({month: "October"})
+    db.tasks.find({month: "October"})
     ```
     
 **Output:**
