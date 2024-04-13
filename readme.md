@@ -14,6 +14,19 @@
 
  **Question doc:** https://docs.google.com/document/d/1rwPQ2LbHtMZajA_GIZfR-Ko2MFueoT82AmfHTK9V-hM/edit
 
+  - local download:
+
+  - Run the command in terminal to get a dependencies
+
+    ``` bash
+    npm i
+    ```
+  - Start the server
+
+     ``` bash
+    npm start
+    ```   
+
  - 1. Creating room:
 
     ``` bash
