@@ -8,19 +8,6 @@
 
  - I have attached `Output image` for your reference  
 
- - local download:
-
-  - Run the command in terminal to get a dependencies
-
-    ``` bash
-    npm i
-    ```
-  - Start the server
-
-     ``` bash
-    npm start
-    ```   
-
  - 1. Write API endpoint which will create a text file in a particular folder
 
     ``` bash
