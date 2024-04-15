@@ -10,7 +10,7 @@
 
  - I have attached `Output image` for your reference  
 
- - Use the following URL's to get a output in for my task(use the postman API)
+ - Use the following URL's to get a output in for this task(use the postman API)
 
  **Question doc:** https://docs.google.com/document/d/1rwPQ2LbHtMZajA_GIZfR-Ko2MFueoT82AmfHTK9V-hM/edit
 
@@ -29,8 +29,10 @@
 
  - 1. Creating room:
 
+ - This command to create a room booking
+
     ``` bash
-    http://localhost:4000/createroom
+    https://hallbookingapi-8yl5.onrender.com/createroom
     ```
     
 **Output:**
@@ -39,8 +41,9 @@
 
  - 2. Booking room:
 
+ - This command to book the room
     ``` bash
-    http://localhost:4000/bookingroom
+    https://hallbookingapi-8yl5.onrender.com/bookingroom
     ```
     
 **Output:**
@@ -49,8 +52,10 @@
 
  - 3. List all rooms with booked data:
 
+ - This command to get the customer room booking details
+
     ``` bash
-    http://localhost:4000/customerbookingdetails
+    https://hallbookingapi-8yl5.onrender.com/customerbookingdetails
     ```
     
 **Output:**
@@ -59,8 +64,10 @@
 
  - 4. List all rooms with booked data:
 
+ - This command to get the all rooms with booked data
+
     ``` bash
-    http://localhost:4000/allcustomers
+    https://hallbookingapi-8yl5.onrender.com/allcustomers
     ```
     
 **Output:**
@@ -69,8 +76,10 @@
 
   - 5. List customer booking count
 
+  - - This command to get the cutomer booking count
+
     ``` bash
-    http://localhost:4000/customerbookings?name=Susi
+    https://hallbookingapi-8yl5.onrender.com/customerbookings?name=Susi
     ```
     
 **Output:**
